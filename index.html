@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--DOCTYPE html se usa para definir el tipo de documento y la versión de HTML que se está utilizando-->
+<html lang="es">
+  <!--El atributo lang se utiliza para especificar el idioma del contenido del documento-->
+<head>
+  <!--La sección head contiene metadatos y enlaces a recursos externos como style.css y los cdns-->
+<meta charset="UTF-8">
+<meta name="description" content="Fundación Pies con Cora - Ayudando a quienes más lo necesitan">
+<meta name="keywords" content="Fundación, Pies con Cora, ayuda, caridad, comunidad, niños, ancianos">
+<meta name="author" content="Yuritsa Páez">
+<!--El meta viewport es crucial para el diseño responsivo en dispositivos móviles-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fundación Pies con Cora</title>
+  <!--Enlace al archivo CSS externo para los estilos del diseño web-->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<!--El cuerpo del documento contiene el contenido visible de la página web-->
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="img/logo2.png" alt="Logo Fundación Pies con Cora" height="70" />
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#quienes">Quiénes somos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+          <li><a class="btn-dona" href="#donar">Dona</a></li>
+        </ul>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO con video -->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Dona</a>
+          <a class="btn outline" href="#voluntariado">Sé parte</a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+224.000</div>
+            <div class="stat-label">Niños beneficiados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+12.000</div>
+            <div class="stat-label">Docentes capacitados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+300</div>
+            <div class="stat-label">Colegios acompañados</div>
+          </div>
+        </div>
+      </div>
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+    <section id="proyectos" class="projects container">
+      <h2>Proyectos en Colombia</h2>
+      <p class="lead">Llevamos educación de calidad a diferentes regiones. Explora algunos de nuestros proyectos:</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Antioquia — Caucasia</h3>
+            <p>Programas educativos y formación docente
+              para el fortalecimiento de la comunidad. También trabajamos en la promoción de valores y habilidades sociales en 
+            las comunas de Medellín</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>La Guajira — Riohacha</h3>
+            <p>Intervenciones comunitarias y proyectos culturales en las 
+              poblaciones indígenas y comunidades afrocolombianas.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Córdoba — Tierra Alta</h3>
+            <p>Escuelas y centros de aprendizaje fortalecidos para los niños y niñas</aside> de 
+              familias agricultoras.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Suscríbete para recibir noticias e historias.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="img/logo2.png" alt="Fundación Pies con Cora" width="50" height="50"/>
+    </div>
+
+    <!-- Enlaces -->
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>QUÉ HACEMOS</h4>
+        <ul>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>FORMAS DE AYUDAR</h4>
+        <ul>
+          <li><a href="#voluntariado">Voluntariado</a></li>
+          <li><a href="#donar">Dona</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>QUIÉNES SOMOS</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#impacto">Nuestro impacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="footer-social">
+    <div class="container social-icons">
+      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/yuritsa-paez-a85920121/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://x.com/?lang=es" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+     
+    </div>
+  </div>
+
+    <div class="footer-bottom">
+      <div class="container">&copy; <span id="anio"></span> Fundación Pies con Cora</div>
+    </div>
+  </footer>
+
+   <!-- NO OLVIDA AGREGAR LOS PATROCINADORES PARA LA
+    SESION 3-- yurIntelligence-->
+ <!-- Font Awesome para los íconos -->
+<script src="https://kit.fontawesome.com/a2b5e6b6a7.js" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

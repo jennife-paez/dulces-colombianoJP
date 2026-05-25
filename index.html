@@ -1,176 +1,133 @@
 <!DOCTYPE html>
-<!--DOCTYPE html se usa para definir el tipo de documento y la versión de HTML que se está utilizando-->
 <html lang="es">
-  <!--El atributo lang se utiliza para especificar el idioma del contenido del documento-->
 <head>
-  <!--La sección head contiene metadatos y enlaces a recursos externos como style.css y los cdns-->
-<meta charset="UTF-8">
-<meta name="description" content="Fundación Pies con Cora - Ayudando a quienes más lo necesitan">
-<meta name="keywords" content="Fundación, Pies con Cora, ayuda, caridad, comunidad, niños, ancianos">
-<meta name="author" content="Yuritsa Páez">
-<!--El meta viewport es crucial para el diseño responsivo en dispositivos móviles-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fundación Solovinos</title>
-  <!--Enlace al archivo CSS externo para los estilos del diseño web-->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <!--Despúes hay que des comentarlo-->
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<!--El cuerpo del documento contiene el contenido visible de la página web-->
+
 <body>
   <header class="header">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        <img src="img/logo2.png" alt="Logo Fundación Pies con Cora" height="70" />
-      </a>
-      <nav class="main-nav" id="mainNav">
+      <div class="logo">
+        <img src="img/logosolo.jpeg" alt="Logo de Solovino" class="logo">
+        <h1>Solovinos</h1>
+      </div>
+      
+      <nav class="nav">
         <ul>
-          <li><a href="#quienes">Quiénes somos</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#impacto">Impacto</a></li>
-          <li><a class="btn-dona" href="#donar">Dona</a></li>
+          <li><a href="#inicio" class="nav-button">Inicio</a></li>
+          <li><a href="#quienes-somos" class="nav-button">Quiénes Somos</a></li>
+          <li><a href="#adopcion" class="nav-button">Adopción</a></li>
+          <li><a href="#contacto" class="nav-button">Contacto</a></li>
         </ul>
       </nav>
-      <button id="menuToggle" class="menu-toggle">☰</button>
     </div>
   </header>
 
   <main>
-    <!-- HERO con video -->
-    <section class="hero video-hero">
-      <img src="https://images.unsplash.com/photo-1619079664187-0e115b93f3ad?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo Fundación Pies con Cora" height="70" />
-      <!--video class="hero-video" id="heroVideo" autoplay loop playsinline-->
-        <!--source src="img/Video_pies_con_cora.mp4" type="video/mp4" />-->
-      <!--/video-->
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content container">
-        <div class="hero-actions">
-          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Dona</a>
-          <a class="btn outline" href="#voluntariado">Sé parte</a>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat">
-            <div class="stat-number">+224.000</div>
-            <div class="stat-label">Fundaciones</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+12.000</div>
-            <div class="stat-label">Adopciones</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">+300</div>
-            <div class="stat-label">Voluntariado</div>
-          </div>
-        </div>
+    <section id="inicio" class="hero">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="videos/hero.mp4" type="video/mp4">
+          Tu navegador no soporta video en HTML5.
+        </video>
       </div>
-    </section> <!--Fin hero y cierra las estadísticas y todo-->
 
-    <section id="proyectos" class="projects container">
-      <h2>Apoyos en Colombia y México</h2>
-      <p class="lead">Ayudamos a todos los perritos en calles en Ciudad de México, Bogotá y Yopal.</p>
+      <div class="hero-content">
+        <h2>Bienvenidos a nuestra fundación</h2>
+        <p>Rescatamos, cuidamos y buscamos un hogar para nuestros peluditos.</p>
 
-      <div class="project-cards">
-        <article class="card">
-          <div class="card-img" id="antioquia-caucasia"></div>
-          <div class="card-body">
-            <h3>Antioquia — Caucasia</h3>
-            <p>Programas </p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-img" id="guajira"></div>
-          <div class="card-body">
-            <h3>La Guajira — Riohacha</h3>
-            <p>Intervenciones y ayudas </p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-img" id="cordoba"></div>
-          <div class="card-body">
-            <h3>Aquí va la colonia</h3>
-            <p>Como estamos ayudando</p>
-          </div>
-        </article>
+
+        <div class="hero-buttons">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxhv-N7h_hsOPMay66fUlLtZPvL_FTeGMLfmab9FQhtDTigA/viewform?usp=publish-editor" class="btn">Adopción</a>
+        <a href="https://www.petco.com.mx/petco/en/?utm_source=google&utm_medium=paid_search&utm_campaign=(EPY_GADS_LF_SEMB_TGT_IMP_AO)_Ecomm_Nueva_Brand&utm_content=Brand_756250570769&gad_source=1&gad_campaignid=22603248935&gbraid=0AAAAADdTlUeqiMcF9sFCbm0C7oFJF-heF&gclid=Cj0KCQjww8rQBhDjARIsAE43KPO5nDblfLEb7xFtD34Q8b8UtmbK77onjyQh7ZCO3nB7URA9TmWcXcsaArCOEALw_wcB" class="btn">Tienda</a>
+      </div>
+      </div>
+      
+    </section>
+
+    <section id="quienes-somos" class="quienes-somos">
+      <h2>Quiénes Somos</h2>
+      <div class="content">
+        <p>Somos una organización dedicada al rescate y cuidado de animales en situación de calle. Nuestra misión es darles una segunda oportunidad y encontrarles un hogar amoroso y responsable. Contamos con un equipo de expertos en cuidado animal y voluntarios apasionados.</p>
       </div>
     </section>
 
-    <section id="contacto" class="newsletter">
-      <div class="container newsletter-inner">
-        <div>
-          <h2>¡No te pierdas lo último!</h2>
-          <p>Suscríbete para recibir noticias e historias.</p>
-        </div>
-        <form id="subscribeForm" class="subscribe-form" novalidate>
-          <input id="email" type="email" placeholder="Tu correo electrónico" required />
-          <button class="btn primary" type="submit">Suscribirme</button>
-        </form>
-        <div id="formMessage" class="form-message"></div>
+    <section id="adopcion" class="adopcion">
+      <h2>🐾 Conoce a nuestros perritos 🐾</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="macho">Machos</button>
+        <button class="filter-btn" data-category="hembra">Hembras</button>
       </div>
+
+      <div id="perros-container"></div>
     </section>
+
+    <div class="row">
+      <h3>Nuestro Refugio</h3>
+      <div class="column">
+        <img src="img/refugio1.jpeg" alt="rest1" style="width:80%; height:20%;">
+      </div>
+      <div class="column">
+        <img src="img/refugio2.jpeg" alt="rest2" style="width:80%; height:20%;">
+      </div>
+      <div class="column">
+        <img src="img/refugio3.jpeg" alt="rest3" style="width:80%; height:20%;">
+      </div>  
+    </div>
+
   </main>
 
-  <footer class="site-footer">
-  <div class="container footer-grid">
-    <!-- Logo -->
-    <div class="footer-logo">
-      <img src="img/logo2.png" alt="Fundación Pies con Cora" width="50" height="50"/>
-    </div>
+  <aside class="promociones">
+    <h3>Voluntariado</h3>
+    <p>¡Únete a nuestro equipo de voluntarios y ayúdanos a cuidar a nuestros peluditos!</p>
+    <p>Todos los viernes, a las 7 pm en el parque Cantera hacemos actividades y dinámicas. ¡Te esperamos!</p>
+  </aside>
 
-    <!-- Enlaces -->
-    <div class="footer-links">
-      <div class="footer-col">
-        <h4>QUÉ HACEMOS</h4>
-        <ul>
-          <li><a href="#noticias">Noticias</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
+  <footer id="contacto">
+    <div class="footer-grid">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <address>
+          <p>
+            <i class="fa fa-map-marker-alt"></i>
+            <a href="https://maps.app.goo.gl/PagkU66BxEjSvv5g7" target="_blank" rel="noreferrer noopener">
+            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> Exejido de Sta Úrsula Coapa, 04600 Ciudad de México, CDMX
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5519224580"> 55 1922 4580</a>
+          </p>
+        </address>
       </div>
-
-      <div class="footer-col">
-        <h4>FORMAS DE AYUDAR</h4>
-        <ul>
-          <li><a href="#voluntariado">Voluntariado</a></li>
-          <li><a href="#donar">Dona</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>QUIÉNES SOMOS</h4>
-        <ul>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#impacto">Nuestro impacto</a></li>
-        </ul>
+      
+      <div class="redes-sociales">
+        <h3>Síguenos en redes sociales</h3>
+        <div class="redes-iconos">
+          <a href="https://www.facebook.com/jennifer.paez.7921?locale=es_LA" aria-label="Síguenos en Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/callejeritosxtodos/" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@callejeritosxtodos" aria-label="Síguenos en TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Redes sociales -->
-  <div class="footer-social">
-    <div class="container social-icons">
-      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-      <a href="https://www.linkedin.com/in/yuritsa-paez-a85920121/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://x.com/?lang=es" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-     
-    </div>
-  </div>
 
     <div class="footer-bottom">
-      <div class="container">&copy; <span id="anio"></span> Fundación Pies con Cora</div>
+      <button onclick="scrollToTop()" class="scroll-to-top-btn" aria-label="Volver al inicio de la página">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+      <p class="copyright">© 2026 Solovinos | Todos los derechos reservados por Jennifer Páez</p>
     </div>
   </footer>
 
-   <!-- NO OLVIDA AGREGAR LOS PATROCINADORES PARA LA
-    SESION 3-- yurIntelligence-->
- <!-- Font Awesome para los íconos -->
-<script src="https://kit.fontawesome.com/a2b5e6b6a7.js" crossorigin="anonymous"></script>
-
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -11,7 +11,25 @@ header {
   font-size: 24px;
   font-weight: bold;
 }
+/* LOGO HEADER */
+header {
+  background: #f5e6d3; /* tono similar al logo */
+  padding: 15px;
+  text-align: center;
+}
 
+.logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e2a38; /* azul del logo */
+  letter-spacing: 2px;
+}
 .container {
   display: flex;
   padding: 20px;

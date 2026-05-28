@@ -83,39 +83,60 @@ button {
   }
 
 .footer {
-  background: #222;
-  color: white;
-  margin-top: 40px;
-  padding-top: 30px;
+  background: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
 }
 
+/* CONTENEDOR FLEX RESPONSIVE */
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap; /* 🔥 ESTO SOLUCIONA TU PROBLEMA */
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
 }
 
-.footer-section {
-  max-width: 250px;
+/* COLUMNAS */
+.footer-col {
+  flex: 1;
+  min-width: 250px;
 }
 
-.footer-section h3,
-.footer-section h4 {
+/* TEXTOS */
+.footer h3 {
+  color: #f4c542;
+}
+
+.footer h4 {
   margin-bottom: 10px;
-  color: #ffcc00;
+  color: #f4c542;
 }
 
-.footer-section p {
-  margin: 5px 0;
-  font-size: 14px;
+.footer p {
+  color: #ccc;
 }
 
+/* REDES */
+.socials a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.socials a:hover {
+  color: #f4c542;
+}
+
+/* PARTE INFERIOR */
 .footer-bottom {
   text-align: center;
-  background: #111;
-  padding: 15px;
-  font-size: 13px;
-  width: 100%;
-  box-sizing: border-box;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
 }

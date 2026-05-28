@@ -2,132 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundación Solovinos</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Dulces Colombianos 🇨🇴</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="header">
-      <div class="logo">
-        <img src="img/logosolo.jpeg" alt="Logo de Solovino" class="logo">
-        <h1>Solovinos</h1>
-      </div>
-      
-      <nav class="nav">
-        <ul>
-          <li><a href="#inicio" class="nav-button">Inicio</a></li>
-          <li><a href="#quienes-somos" class="nav-button">Quiénes Somos</a></li>
-          <li><a href="#adopcion" class="nav-button">Adopción</a></li>
-          <li><a href="#contacto" class="nav-button">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="video-background">
-        <video autoplay muted loop playsinline>
-          <source src="videos/hero.mp4" type="video/mp4">
-          Tu navegador no soporta video en HTML5.
-        </video>
-      </div>
+<header>
+  Dulces Colombianos 🇨🇴 en México 🍬
+</header>
 
-      <div class="hero-content">
-        <h2>Bienvenidos a nuestra fundación</h2>
-        <p>Rescatamos, cuidamos y buscamos un hogar para nuestros peluditos.</p>
+<div class="container">
 
+  <!-- PRODUCTOS -->
+  <div class="products">
 
-        <div class="hero-buttons">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScxhv-N7h_hsOPMay66fUlLtZPvL_FTeGMLfmab9FQhtDTigA/viewform?usp=publish-editor" class="btn">Adopción</a>
-        <a href="https://www.petco.com.mx/petco/en/?utm_source=google&utm_medium=paid_search&utm_campaign=(EPY_GADS_LF_SEMB_TGT_IMP_AO)_Ecomm_Nueva_Brand&utm_content=Brand_756250570769&gad_source=1&gad_campaignid=22603248935&gbraid=0AAAAADdTlUeqiMcF9sFCbm0C7oFJF-heF&gclid=Cj0KCQjww8rQBhDjARIsAE43KPO5nDblfLEb7xFtD34Q8b8UtmbK77onjyQh7ZCO3nB7URA9TmWcXcsaArCOEALw_wcB" class="btn">Tienda</a>
-      </div>
-      </div>
-      
-    </section>
-
-    <section id="quienes-somos" class="quienes-somos">
-      <h2>Quiénes Somos</h2>
-      <div class="content">
-        <p>Somos una organización dedicada al rescate y cuidado de animales en situación de calle. Nuestra misión es darles una segunda oportunidad y encontrarles un hogar amoroso y responsable. Contamos con un equipo de expertos en cuidado animal y voluntarios apasionados.</p>
-      </div>
-    </section>
-
-    <section id="adopcion" class="adopcion">
-      <h2>🐾 Conoce a nuestros perritos 🐾</h2>
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-category="all">Todos</button>
-        <button class="filter-btn" data-category="macho">Machos</button>
-        <button class="filter-btn" data-category="hembra">Hembras</button>
-      </div>
-
-      <div id="perros-container"></div>
-    </section>
-
-    <div class="row">
-      <h3>Nuestro Refugio</h3>
-      <div class="column">
-        <img src="img/refugio1.jpeg" alt="rest1" style="width:80%; height:20%;">
-      </div>
-      <div class="column">
-        <img src="img/refugio2.jpeg" alt="rest2" style="width:80%; height:20%;">
-      </div>
-      <div class="column">
-        <img src="img/refugio3.jpeg" alt="rest3" style="width:80%; height:20%;">
-      </div>  
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?chocolate,cake">
+      <h3>Chocoramo</h3>
+      <p>$75 MXN</p>
+      <button onclick="addToCart('Chocoramo',75)">Agregar</button>
     </div>
 
-  </main>
-
-  <aside class="promociones">
-    <h3>Voluntariado</h3>
-    <p>¡Únete a nuestro equipo de voluntarios y ayúdanos a cuidar a nuestros peluditos!</p>
-    <p>Todos los viernes, a las 7 pm en el parque Cantera hacemos actividades y dinámicas. ¡Te esperamos!</p>
-  </aside>
-
-  <footer id="contacto">
-    <div class="footer-grid">
-      <div class="contacto">
-        <h3>Contacto</h3>
-        <address>
-          <p>
-            <i class="fa fa-map-marker-alt"></i>
-            <a href="https://maps.app.goo.gl/PagkU66BxEjSvv5g7" target="_blank" rel="noreferrer noopener">
-            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> Exejido de Sta Úrsula Coapa, 04600 Ciudad de México, CDMX
-            </a>
-          </p>
-          <p>
-            <i class="fa fa-phone"></i>
-            <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5519224580"> 55 1922 4580</a>
-          </p>
-        </address>
-      </div>
-      
-      <div class="redes-sociales">
-        <h3>Síguenos en redes sociales</h3>
-        <div class="redes-iconos">
-          <a href="https://www.facebook.com/jennifer.paez.7921?locale=es_LA" aria-label="Síguenos en Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/callejeritosxtodos/" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@callejeritosxtodos" aria-label="Síguenos en TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?guava,candy">
+      <h3>Bocadillo</h3>
+      <p>$60 MXN</p>
+      <button onclick="addToCart('Bocadillo',60)">Agregar</button>
     </div>
 
-    <div class="footer-bottom">
-      <button onclick="scrollToTop()" class="scroll-to-top-btn" aria-label="Volver al inicio de la página">
-        <i class="fa fa-arrow-up"></i>
-      </button>
-      <p class="copyright">© 2026 Solovinos | Todos los derechos reservados por Jennifer Páez</p>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?caramel,dessert">
+      <h3>Arequipe</h3>
+      <p>$85 MXN</p>
+      <button onclick="addToCart('Arequipe',85)">Agregar</button>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?chips,snack">
+      <h3>Choclitos</h3>
+      <p>$68 MXN</p>
+      <button onclick="addToCart('Choclitos',68)">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?lollipop,candy">
+      <h3>Bon Bon Bum</h3>
+      <p>$35 MXN</p>
+      <button onclick="addToCart('Bon Bon Bum',35)">Agregar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cookies">
+      <h3>Galletas Festival</h3>
+      <p>$58 MXN</p>
+      <button onclick="addToCart('Galletas Festival',58)">Agregar</button>
+    </div>
+
+  </div>
+
+  <!-- CARRITO -->
+  <div class="cart">
+    <h2>🛒 Carrito</h2>
+    <div id="cart-items"></div>
+    <div class="total">Total: $<span id="total">0</span> MXN</div>
+
+    <button onclick="sendWhatsApp()" class="whatsapp-btn">
+      Comprar por WhatsApp 📲
+    </button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

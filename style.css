@@ -75,6 +75,13 @@ button {
   margin-top: 15px;
 }
 
+  .redes-iconos a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+  }
+
 .footer {
   background: #222;
   color: white;
